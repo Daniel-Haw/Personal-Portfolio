@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/188a60087b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="about">
+      <nav
+        class="navbar fixed-top navbar-expand-lg bg-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Daniel Haw Soon Kiat</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-theme="dark"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Daniel Haw
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-end">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    onClick="toggleActive(this)"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    onClick="toggleActive(this)"
+                    href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    onClick="toggleActive(this)"
+                    href="portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    onClick="toggleActive(this)"
+                    href="contact.html"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-md text-center">
+        <div class="row">
+          <div class="col-sm align-self-center">
+            <img class="thumb" src="./img/propic.png" alt="" />
+          </div>
+          <div class="col-sm border-start border-white">
+            <br />
+            <h1>About Me</h1>
+            <br />
+            <p>
+              I'm a 21 year old Computer Science undergraduate with a profound
+              love for all things technological. Ever since I was little, I was
+              perceived by others as a bit nerdy because I was staring at a
+              screen all day. Despite feeling different and separated from my
+              peers at such a young age, I've never really felt alone because I
+              always felt at home with computers. As for who I am today, I am a
+              software engineer with strong foundational in skills such as
+              React, Express, Node and Git. I am by nature an analytical
+              individual with a knack for solving puzzles and problems when
+              presented the opportunity.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-sm border-top border-white border-bottom border-white"
+          >
+            <h2>Skills</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm border-bottom border-white">
+            <h3>Frontend</h3>
+            <div class="frontend">
+              <span><i class="fa-brands fa-html5"></i> HTML</span>
+              <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+              <span><i class="fa-brands fa-square-js"></i> Javascript</span>
+              <span><i class="fa-brands fa-react"></i> React</span>
+            </div>
+          </div>
+          <div
+            class="col-sm border-start border-white border-bottom border-white"
+          >
+            <h3>Backend</h3>
+            <div class="backend">
+              <span><i class="fa-brands fa-java"></i> Java</span>
+              <span><i class="fa-brands fa-node"></i> Node</span>
+              <span><i class="fa-brands fa-python"></i> Python</span>
+              <span><i class="fa-solid fa-server"></i> Servers</span>
+              <span><i class="fa-solid fa-database"></i> Databases</span>
+            </div>
+          </div>
+          <div
+            class="col-sm border-start border-white border-bottom border-white"
+          >
+            <h3>Others</h3>
+            <div class="others">
+              <span
+                ><i class="fa-solid fa-book-open-reader"></i> Fast Learner</span
+              >
+              <span
+                ><i class="fa-solid fa-chess-board"></i> Critical Thinker</span
+              >
+              <span
+                ><i class="fa-solid fa-screwdriver-wrench"></i> Problem
+                Solver</span
+              >
+              <span
+                ><i class="fa-solid fa-headset"></i> Effective
+                Communicator</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:16px;
+}
+body{
+    padding-top:100px;
+    background-color:#333333;
+}
+#header .col{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: justify;
+}
+.carousel{
+    overflow:hidden;
+    width:450px;
+}
+.carousel .carousel-control-prev{
+    transform: translateX(-25px);
+}
+.carousel .carousel-control-next{
+    transform: translateX(25px);
+}
+.bonus{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+.bonus .btn{
+    padding:8px;
+    margin-bottom:15px;
+}
+.power{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+    background-color:black;
+    width:100%;
+    height:24.4vh;
+    color:whitesmoke;
+    font-weight:bold;
+    font-size:1.5rem;
+}
+.about .container-md{
+    padding-bottom:20px;
+}
+.container-md{
+    background-color: rgba(85, 85, 85, 0.5);
+    color:white;
+    border-radius:20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+h1{
+    text-align:left;
+    margin-left:12px;
+}
+p{
+    text-align:justify;
+    margin-left:12px;
+    font-weight:1px;
+}   
+.thumb{
+    max-width:50%;
+    border:3px solid;
+    border-radius:50%;
+    color:black;
+}
+h2{
+    margin-top:30px;
+}
+.about span{
+    font-size:1.7rem;
+    display:block;
+}
+.portHead{
+    text-align:center;
+    color:white;
+}
+.project{
+    max-width:100%;
+}
+#portfolio p{
+    text-align:justify;
+}
+.col-sm a{
+    margin-bottom:30px;
+}
+h3{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+#portfolio .btn{
+    margin-right:8px;
+}
+#contact .container-md{
+    margin-bottom:52px;
+}
+.error{
+    height:25px;
+}
+#error-name,#error-email,#error-message{
+    color:red;
+}
+#feedback{
+    display:inline-block;
+    color:yellowgreen;
+}
+form .btn{
+    margin-top:8px;
+    margin-bottom:20px;
+    margin-right:8px;
+}
+.socials{
+    margin-top:30px;
+}
+.socials img{
+    width:46px;
+}
+.socials a{
+    color:white;
+    margin-left:25px;
+    margin-right:25px;
+}
+
+@media (max-width: 576px) {
+    .about .col-sm{
+        border-left:none !important;
+    }
+    .bonus .power{
+        font-size:1rem; 
+    }   
+}
